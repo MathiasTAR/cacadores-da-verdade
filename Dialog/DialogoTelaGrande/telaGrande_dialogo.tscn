@@ -1,0 +1,138 @@
+[gd_scene load_steps=4 format=3 uid="uid://xk5yoee5oer5"]
+
+[ext_resource type="Script" uid="uid://6pjf2b6a3cr4" path="res://Dialog/DialogoTelaGrande/tela_grande_dialogo.gd" id="1_wacyr"]
+[ext_resource type="FontFile" uid="uid://b6o1uub0wb6qo" path="res://Fontes/RevMiniPixel.ttf" id="2_xrc6j"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_exmuc"]
+line_spacing = 0.0
+font = ExtResource("2_xrc6j")
+font_size = 19
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 0.6)
+
+[node name="TelaGrandeDialogo" type="Control" node_paths=PackedStringArray("_name", "_dialog", "_facesetPlayer", "_facesetNPC")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 8
+script = ExtResource("1_wacyr")
+_name = NodePath("BackGround/BackGrondDialog/Vcontainer/Name")
+_dialog = NodePath("BackGround/BackGrondDialog/Vcontainer/Dialog")
+_facesetPlayer = NodePath("BackGround/Hcontainer/BorderPlayer/FacePlayer")
+_facesetNPC = NodePath("BackGround/Hcontainer/BorderNPC/FaceNPC")
+
+[node name="BackGround" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.34901962)
+
+[node name="Hcontainer" type="HBoxContainer" parent="BackGround"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -630.0
+offset_top = -420.0
+offset_right = 630.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="BorderPlayer" type="ColorRect" parent="BackGround/Hcontainer"]
+custom_minimum_size = Vector2(288, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="FacePlayer" type="TextureRect" parent="BackGround/Hcontainer/BorderPlayer"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -210.0
+offset_right = 140.0
+offset_bottom = 210.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BorderNPC" type="ColorRect" parent="BackGround/Hcontainer"]
+custom_minimum_size = Vector2(288, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="FaceNPC" type="TextureRect" parent="BackGround/Hcontainer/BorderNPC"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -210.0
+offset_right = 140.0
+offset_bottom = 210.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BackGrondDialog" type="ColorRect" parent="BackGround"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -310.0
+offset_top = -210.0
+offset_right = 310.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0, 0, 0, 0.40784314)
+
+[node name="Vcontainer" type="VBoxContainer" parent="BackGround/BackGrondDialog"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -307.5
+offset_top = -205.0
+offset_right = 307.5
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+
+[node name="Name" type="Label" parent="BackGround/BackGrondDialog/Vcontainer"]
+layout_mode = 2
+text = "Maria"
+label_settings = SubResource("LabelSettings_exmuc")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Dialog" type="RichTextLabel" parent="BackGround/BackGrondDialog/Vcontainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_constants/line_separation = 1
+theme_override_constants/shadow_outline_size = 10
+theme_override_constants/outline_size = 8
+theme_override_fonts/normal_font = ExtResource("2_xrc6j")
+theme_override_font_sizes/normal_font_size = 22
+scroll_active = false
