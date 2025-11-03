@@ -1,11 +1,11 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1762192458
+::res://::1762198082
 global.gd::GDScript::9181564026524038980::1762005416::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::3179211687206955551::1761837787::1761837791::1::::<><><>0<>0<>22b0753977d89c891deaeb535da4d075<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 idle1.png::CompressedTexture2D::6851882221814488226::1761931450::1761931450::1::::<><><>0<>0<>16b74003e8a111bb338c759c06860ed6<>res://.godot/imported/idle1.png-e243967cd39769d40835eec74a0bac66.ctex::
-::res://Cenas/::1762192336
+::res://Cenas/::1762198444
 cidade.gd::GDScript::5835494618316587657::1762020143::0::1::::Cidade<>Node2D<><>0<>0<><>::
-cidade.tscn::PackedScene::961775484265897440::1762192336::0::1::::<><><>0<>0<><>::uid://di8vakyw8d2po::::res://Tilesets/TilesetPokemon/pokemon_tileset___fire_red_leaf_green___outdoors_l_by_ozotwo-d7dmntu-1272244817.png<>uid://cpe00j22wvvth::::res://Cenas/cidade.gd<>uid://h0vxrd0t2bti::::res://Player/Player.tscn<>uid://btw17phxkotix::::res://Tilesets/TilesetPokemon/Game Boy Advance - Pokemon FireRed _ LeafGreen - Tilesets - Tileset 2.png<>uid://s57sn2a7u72d::::res://Tilesets/TilesetPokemon/Game Boy Advance - Pokemon FireRed _ LeafGreen - Tilesets - Buildings.png<>uid://cb1snd8aw6gil::::res://NPC/npc.tscn<>uid://cfpxbkcqrom8c::::res://NPC/DraClara/DraClara.tscn
+cidade.tscn::PackedScene::961775484265897440::1762198444::0::1::::<><><>0<>0<><>::uid://di8vakyw8d2po::::res://Tilesets/TilesetPokemon/pokemon_tileset___fire_red_leaf_green___outdoors_l_by_ozotwo-d7dmntu-1272244817.png<>uid://cpe00j22wvvth::::res://Cenas/cidade.gd<>uid://h0vxrd0t2bti::::res://Player/Player.tscn<>uid://btw17phxkotix::::res://Tilesets/TilesetPokemon/Game Boy Advance - Pokemon FireRed _ LeafGreen - Tilesets - Tileset 2.png<>uid://s57sn2a7u72d::::res://Tilesets/TilesetPokemon/Game Boy Advance - Pokemon FireRed _ LeafGreen - Tilesets - Buildings.png<>uid://ce1kb4vuqvgkm::::res://NPC/DraClara/dra_clara.tscn<>uid://co6l3tchqxkmc::::res://NPC/ProfVictor/Prof_Victor.tscn
 ::res://Dialog/::1761929152
 ::res://Dialog/DialogoTelaGrande/::1762023486
 telaGrande_dialogo.tscn::PackedScene::1636852291780560960::1762023486::0::1::::<><><>0<>0<><>::uid://6pjf2b6a3cr4::::res://Dialog/DialogoTelaGrande/tela_grande_dialogo.gd<>uid://b6o1uub0wb6qo::::res://Fontes/RevMiniPixel.ttf
@@ -21,13 +21,19 @@ RevMiniPixel.ttf::FontFile::4592791535896135794::1762022380::1762192107::1::::<>
 ::res://Itens/Coletaveis/PreFab/Script/::1761925804
 ::res://Itens/Coletaveis/Sprites/::1761849425
 bolaPapel.png::CompressedTexture2D::3312303473310891265::1761848930::1761849425::1::::<><><>0<>0<>3d7d5c0b2e1ab0490c664048eef52d02<>res://.godot/imported/bolaPapel.png-2a2b4d4db158cc748428d31d86a0b319.ctex::
-::res://NPC/::1762192189
-dialogIcon.png::CompressedTexture2D::8456885362609142400::1762022300::1762022300::1::::<><><>0<>0<>ce7a6207138049d45ed0a943d7d0d01c<>res://.godot/imported/dialogIcon.png-ad85505a2b8b744f457ccf5025b8613c.ctex::
-npc.gd::GDScript::8849455498033865809::1762023249::0::1::::npc<>Node2D<><>0<>0<><>::
-npc.tscn::PackedScene::4897820362399569867::1762023486::0::1::::<><><>0<>0<><>::uid://dyc0ieo2l4f3n::::res://NPC/npc.gd<>uid://blj6sc7lbkua0::::res://Player/loose sprites gbstudio.png<>uid://dsqtwwkpgns13::::res://NPC/dialogIcon.png
-::res://NPC/DraClara/::1762192388
-DraClara.tscn::PackedScene::5156150057588154260::1762192252::0::1::::<><><>0<>0<><>::uid://cb1snd8aw6gil::::res://NPC/npc.tscn
-dra_clara.gd::GDScript::6449890099211527071::1762192388::0::1::::<>Node2D<><>0<>0<><>::
+::res://NPC/::1762198079
+::res://NPC/Base/::1762198560
+dialogIcon.png::CompressedTexture2D::8456885362609142400::1762022300::1762194141::1::::<><><>0<>0<>297661ed896992548a38eb76bc05a573<>res://.godot/imported/dialogIcon.png-8dce500af3b81e1db882ea4261e004d6.ctex::
+npc.gd::GDScript::8849455498033865809::1762198560::0::1::::npc<>Node2D<><>0<>0<><>::
+npc.tscn::PackedScene::4897820362399569867::1762197636::0::1::::<><><>0<>0<><>::uid://dyc0ieo2l4f3n::::res://NPC/Base/npc.gd
+::res://NPC/DraClara/::1762198501
+dra_clara.gd::GDScript::3153600961886865810::1762198501::0::1::::<>npc<><>0<>0<><>::
+dra_clara.tscn::PackedScene::5107881075814424800::1762198014::0::1::::<><><>0<>0<><>::uid://cb1snd8aw6gil::::res://NPC/Base/npc.tscn<>uid://bk6vl2iidd8re::::res://NPC/DraClara/dra_clara.gd<>uid://blj6sc7lbkua0::::res://Player/loose sprites gbstudio.png<>uid://dsqtwwkpgns13::::res://NPC/Base/dialogIcon.png
+::res://NPC/ProfVictor/::1762198697
+Prof_Victor.tscn::PackedScene::5820199779217883610::1762198445::0::1::::<><><>0<>0<><>::uid://cb1snd8aw6gil::::res://NPC/Base/npc.tscn<>uid://kx7aa71fsnu4::::res://NPC/ProfVictor/prof_victor.gd<>uid://blj6sc7lbkua0::::res://Player/loose sprites gbstudio.png<>uid://dsqtwwkpgns13::::res://NPC/Base/dialogIcon.png
+prof_victor.gd::GDScript::751312119114692761::1762198338::0::1::::<>npc<><>0<>0<><>::
+Reporter_Sofia.tscn::PackedScene::4094279548750381239::1762198697::0::1::::<><><>0<>0<><>::uid://cb1snd8aw6gil::::res://NPC/Base/npc.tscn<>uid://kx7aa71fsnu4::::res://NPC/ProfVictor/prof_victor.gd<>uid://blj6sc7lbkua0::::res://Player/loose sprites gbstudio.png<>uid://dsqtwwkpgns13::::res://NPC/Base/dialogIcon.png
+::res://NPC/ReporterSofia/::0
 ::res://Player/::1762010646
 loose sprites gbstudio.png::CompressedTexture2D::3178991889546027561::1761841080::1761841080::1::::<><><>0<>0<>400ad6d1a27d227b101dd26455797668<>res://.godot/imported/loose sprites gbstudio.png-78286833018ea55ce2c1a8dcbe77b8a6.ctex::
 Player.gd::GDScript::2738738342699627235::1762008334::0::1::::<>CharacterBody2D<><>0<>0<><>::

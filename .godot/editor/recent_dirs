@@ -1,5 +1,7 @@
-res://NPC
+res://NPC/Base
 res://Player
+res://NPC/DraClara
+res://NPC
 res://Dialog
 res://Itens/Coletaveis/PreFab
 res://Itens/Coletaveis

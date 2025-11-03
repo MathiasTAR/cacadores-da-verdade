@@ -1,0 +1,207 @@
+[gd_scene load_steps=27 format=3 uid="uid://bylkglaabolpn"]
+
+[ext_resource type="PackedScene" uid="uid://cb1snd8aw6gil" path="res://NPC/Base/npc.tscn" id="1_e762e"]
+[ext_resource type="Script" uid="uid://pdhsenbqt8o" path="res://NPC/ReporterSofia/reporter_sofia.gd" id="2_j11w7"]
+[ext_resource type="Texture2D" uid="uid://blj6sc7lbkua0" path="res://Player/loose sprites gbstudio.png" id="3_prpfe"]
+[ext_resource type="Texture2D" uid="uid://dsqtwwkpgns13" path="res://NPC/Base/dialogIcon.png" id="4_oghhg"]
+
+[sub_resource type="Curve2D" id="Curve2D_prj0s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7yyc5"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqqyu"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xltdc"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cuthi"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ydnw"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(0, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtaym"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(16, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bn2bw"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(32, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1x7m8"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(48, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l12fh"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(0, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0ydv"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(16, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3e462"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(32, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xycd"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(48, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bq4ey"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_op6g6"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o4iv0"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aican"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aljvj"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(80, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8kijv"]
+atlas = ExtResource("3_prpfe")
+region = Rect2(96, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6avbj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7yyc5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xqqyu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xltdc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cuthi")
+}],
+"loop": true,
+"name": &"Baixo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ydnw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtaym")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bn2bw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1x7m8")
+}],
+"loop": true,
+"name": &"Cima",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l12fh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0ydv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3e462")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xycd")
+}],
+"loop": true,
+"name": &"Direita",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bq4ey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_op6g6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o4iv0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aican")
+}],
+"loop": true,
+"name": &"Esquerda",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aljvj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8kijv")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ousg0"]
+size = Vector2(14, 15)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1iecc"]
+radius = 11.0
+
+[node name="ReporterSofia" instance=ExtResource("1_e762e")]
+script = ExtResource("2_j11w7")
+
+[node name="Path2D" type="Path2D" parent="." index="0"]
+curve = SubResource("Curve2D_prj0s")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" index="0"]
+rotates = false
+loop = false
+
+[node name="ReporterSofia" type="CharacterBody2D" parent="Path2D/PathFollow2D" index="0"]
+collision_layer = 8
+collision_mask = 11
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Path2D/PathFollow2D/ReporterSofia" index="0"]
+sprite_frames = SubResource("SpriteFrames_6avbj")
+animation = &"Direita"
+autoplay = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/ReporterSofia" index="1"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_ousg0")
+
+[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D/ReporterSofia" index="2"]
+collision_layer = 128
+collision_mask = 128
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/ReporterSofia/Area2D" index="0"]
+shape = SubResource("CircleShape2D_1iecc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/ReporterSofia/Area2D" index="1"]
+visible = false
+position = Vector2(0, -13)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_oghhg")
+
+[connection signal="area_entered" from="Path2D/PathFollow2D/ReporterSofia/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Path2D/PathFollow2D/ReporterSofia/Area2D" to="." method="_on_area_2d_area_exited"]
