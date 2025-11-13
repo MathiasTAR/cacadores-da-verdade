@@ -1,12 +1,3 @@
+res://Player/Player.tscn
+res://Player/Player.gd
 res://Cenas/cidade.tscn
-res://NPC/npc.gd
-res://NPC/npc.tscn
-res://NPC/Base/npc.tscn
-res://NPC/DraClara/DraClara.tscn
-res://NPC/DraClara/dra_clara.gd
-res://NPC/Base/npc.gd
-res://NPC/DraClara/dra_clara.tscn
-res://NPC/ProfVictor/Prof_Victor.tscn
-res://NPC/ProfVictor/prof_victor.gd
-res://NPC/ReporterSofia/Reporter_Sofia.tscn
-res://NPC/ReporterSofia/reporter_sofia.gd

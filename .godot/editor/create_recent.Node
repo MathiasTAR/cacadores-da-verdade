@@ -1,3 +1,6 @@
+GridContainer
+Panel
+CanvasLayer
 Node
 Sprite2D
 CharacterBody2D
@@ -10,5 +13,3 @@ Path2D
 RemoteTransform2D
 AnimationPlayer
 ColorRect
-CanvasLayer
-RichTextLabel

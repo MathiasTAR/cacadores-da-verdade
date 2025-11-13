@@ -2549,7 +2549,6 @@ layer_4/tile_data = PackedInt32Array(393258, 524292, 21, 1703961, 2752516, 21, 1
 
 [node name="Player" parent="." instance=ExtResource("1_skjpe")]
 position = Vector2(648, 384)
-SPEED = 300.0
 
 [node name="NPCS" type="Node" parent="."]
 
