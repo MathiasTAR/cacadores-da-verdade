@@ -1,4 +1,11 @@
+TextureButton
+TextureRect
+Button
 GridContainer
+Control
+RichTextLabel
+VBoxContainer
+TabContainer
 Panel
 CanvasLayer
 Node
@@ -6,10 +13,3 @@ Sprite2D
 CharacterBody2D
 Node2D
 CollisionShape2D
-Area2D
-AnimatedSprite2D
-PathFollow2D
-Path2D
-RemoteTransform2D
-AnimationPlayer
-ColorRect

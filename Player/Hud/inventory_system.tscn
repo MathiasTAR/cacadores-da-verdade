@@ -1,0 +1,125 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnu4mgu3axlyd"]
+
+[ext_resource type="Script" uid="uid://ddapkpqoavahr" path="res://Player/Hud/home.gd" id="1_33nkk"]
+[ext_resource type="Texture2D" uid="uid://7w26g6v2dgxn" path="res://Player/Hud/invetario.png" id="2_dci4c"]
+[ext_resource type="Texture2D" uid="uid://blkbffygu543d" path="res://icon.svg" id="3_o0wrv"]
+
+[node name="InventorySystem" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+current_tab = 0
+tabs_visible = false
+
+[node name="Home" type="Control" parent="TabContainer"]
+layout_mode = 2
+script = ExtResource("1_33nkk")
+metadata/_tab_index = 0
+
+[node name="BackGround" type="TextureRect" parent="TabContainer/Home"]
+layout_mode = 0
+anchor_right = 32.0
+anchor_bottom = 18.0
+texture = ExtResource("2_dci4c")
+stretch_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="MarcadorHome" type="TextureButton" parent="TabContainer/Home"]
+modulate = Color(1, 1, 1, 0.24313726)
+layout_mode = 0
+offset_left = 252.0
+offset_top = 24.0
+offset_right = 380.0
+offset_bottom = 152.0
+scale = Vector2(0.45, 0.45)
+texture_normal = ExtResource("3_o0wrv")
+
+[node name="MarcadorBacklog" type="TextureButton" parent="TabContainer/Home"]
+modulate = Color(1, 1, 1, 0.34509805)
+layout_mode = 0
+offset_left = 375.0
+offset_top = 24.0
+offset_right = 503.0
+offset_bottom = 152.0
+scale = Vector2(0.45, 0.45)
+texture_normal = ExtResource("3_o0wrv")
+
+[node name="MarcadorDeduction" type="TextureButton" parent="TabContainer/Home"]
+modulate = Color(1, 1, 1, 0.4)
+layout_mode = 0
+offset_left = 498.0
+offset_top = 26.0
+offset_right = 626.0
+offset_bottom = 154.0
+scale = Vector2(0.45, 0.45)
+texture_normal = ExtResource("3_o0wrv")
+
+[node name="ItemGridContainer" type="GridContainer" parent="TabContainer/Home"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Slot1" type="TextureRect" parent="TabContainer/Home/ItemGridContainer"]
+layout_mode = 2
+
+[node name="Slot2" type="TextureRect" parent="TabContainer/Home/ItemGridContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Home"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BackLog" type="Control" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="BackGround" type="TextureRect" parent="TabContainer/BackLog"]
+layout_mode = 0
+anchor_right = 32.0
+anchor_bottom = 18.0
+texture = ExtResource("2_dci4c")
+stretch_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="LogList" type="VBoxContainer" parent="TabContainer/BackLog"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Log1" type="RichTextLabel" parent="TabContainer/BackLog/LogList"]
+layout_mode = 2
+
+[node name="DeductionPanel" type="Control" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="BackGround" type="TextureRect" parent="TabContainer/DeductionPanel"]
+layout_mode = 0
+anchor_right = 32.0
+anchor_bottom = 18.0
+texture = ExtResource("2_dci4c")
+stretch_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/DeductionPanel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="TabContainer/DeductionPanel/GridContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="TabContainer/DeductionPanel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0

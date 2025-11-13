@@ -1,3 +1,7 @@
-res://Player/Player.tscn
-res://Player/Player.gd
 res://Cenas/cidade.tscn
+res://Player/Hud/inventory_system.tscn
+res://Player/Hud/home.gd
+res://global.gd
+res://NPC/Base/npc.gd
+res://Player/Player.gd
+res://Player/Player.tscn

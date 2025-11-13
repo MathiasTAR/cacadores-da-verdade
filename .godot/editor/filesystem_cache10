@@ -1,11 +1,11 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1762885975
+::res://::1763004042
 global.gd::GDScript::9181564026524038980::1762005416::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::3179211687206955551::1761837787::1761837791::1::::<><><>0<>0<>22b0753977d89c891deaeb535da4d075<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 idle1.png::CompressedTexture2D::6851882221814488226::1761931450::1761931450::1::::<><><>0<>0<>16b74003e8a111bb338c759c06860ed6<>res://.godot/imported/idle1.png-e243967cd39769d40835eec74a0bac66.ctex::
-::res://Cenas/::1762199089
+::res://Cenas/::1763004000
 cidade.gd::GDScript::5835494618316587657::1762020143::0::1::::Cidade<>Node2D<><>0<>0<><>::
-cidade.tscn::PackedScene::961775484265897440::1762199089::0::1::::<><><>0<>0<><>::uid://di8vakyw8d2po::::res://Tilesets/TilesetPokemon/pokemon_tileset___fire_red_leaf_green___outdoors_l_by_ozotwo-d7dmntu-1272244817.png<>uid://cpe00j22wvvth::::res://Cenas/cidade.gd<>uid://h0vxrd0t2bti::::res://Player/Player.tscn<>uid://btw17phxkotix::::res://Tilesets/TilesetPokemon/Game Boy Advance - Pokemon FireRed _ LeafGreen - Tilesets - Tileset 2.png<>uid://s57sn2a7u72d::::res://Tilesets/TilesetPokemon/Game Boy Advance - Pokemon FireRed _ LeafGreen - Tilesets - Buildings.png<>uid://ce1kb4vuqvgkm::::res://NPC/DraClara/dra_clara.tscn<>uid://co6l3tchqxkmc::::res://NPC/ProfVictor/Prof_Victor.tscn<>uid://bylkglaabolpn::::res://NPC/ReporterSofia/Reporter_Sofia.tscn
+cidade.tscn::PackedScene::961775484265897440::1763004000::0::1::::<><><>0<>0<><>::uid://di8vakyw8d2po::::res://Tilesets/TilesetPokemon/pokemon_tileset___fire_red_leaf_green___outdoors_l_by_ozotwo-d7dmntu-1272244817.png<>uid://cpe00j22wvvth::::res://Cenas/cidade.gd<>uid://h0vxrd0t2bti::::res://Player/Player.tscn<>uid://btw17phxkotix::::res://Tilesets/TilesetPokemon/Game Boy Advance - Pokemon FireRed _ LeafGreen - Tilesets - Tileset 2.png<>uid://s57sn2a7u72d::::res://Tilesets/TilesetPokemon/Game Boy Advance - Pokemon FireRed _ LeafGreen - Tilesets - Buildings.png<>uid://ce1kb4vuqvgkm::::res://NPC/DraClara/dra_clara.tscn<>uid://co6l3tchqxkmc::::res://NPC/ProfVictor/Prof_Victor.tscn<>uid://bylkglaabolpn::::res://NPC/ReporterSofia/Reporter_Sofia.tscn<>uid://bnu4mgu3axlyd::::res://Player/Hud/inventory_system.tscn
 ::res://Dialog/::1761929152
 ::res://Dialog/DialogoTelaGrande/::1762023486
 telaGrande_dialogo.tscn::PackedScene::1636852291780560960::1762023486::0::1::::<><><>0<>0<><>::uid://6pjf2b6a3cr4::::res://Dialog/DialogoTelaGrande/tela_grande_dialogo.gd<>uid://b6o1uub0wb6qo::::res://Fontes/RevMiniPixel.ttf
@@ -35,10 +35,13 @@ Prof_Victor.tscn::PackedScene::5820199779217883610::1762198445::0::1::::<><><>0<
 ::res://NPC/ReporterSofia/::1762199249
 reporter_sofia.gd::GDScript::31161270038699372::1762199089::0::1::::<>npc<><>0<>0<><>::
 Reporter_Sofia.tscn::PackedScene::4094279548750381239::1762199249::0::1::::<><><>0<>0<><>::uid://cb1snd8aw6gil::::res://NPC/Base/npc.tscn<>uid://pdhsenbqt8o::::res://NPC/ReporterSofia/reporter_sofia.gd<>uid://blj6sc7lbkua0::::res://Player/loose sprites gbstudio.png<>uid://dsqtwwkpgns13::::res://NPC/Base/dialogIcon.png
-::res://Player/::1762010646
+::res://Player/::1763003958
 loose sprites gbstudio.png::CompressedTexture2D::3178991889546027561::1761841080::1761841080::1::::<><><>0<>0<>400ad6d1a27d227b101dd26455797668<>res://.godot/imported/loose sprites gbstudio.png-78286833018ea55ce2c1a8dcbe77b8a6.ctex::
-Player.gd::GDScript::2738738342699627235::1762008334::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Player.tscn::PackedScene::544248378119334138::1762010646::0::1::::<><><>0<>0<><>::uid://bfawvdfahb3ut::::res://Player/Player.gd<>uid://blj6sc7lbkua0::::res://Player/loose sprites gbstudio.png
+Player.gd::GDScript::2738738342699627235::1762886078::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::544248378119334138::1762886054::0::1::::<><><>0<>0<><>::uid://bfawvdfahb3ut::::res://Player/Player.gd<>uid://blj6sc7lbkua0::::res://Player/loose sprites gbstudio.png
+::res://Player/Hud/::1763004167
+inventory_system.tscn::PackedScene::3341945775695102359::1763004055::0::1::::<><><>0<>0<><>::
+invetario.png::CompressedTexture2D::2293154389441486043::1763004167::1763004167::1::::<><><>0<>0<>3e12be6c90406942092c7c6deccad5f6<>res://.godot/imported/invetario.png-90c41ca043539840a99adb70d55bb1e2.ctex::
 ::res://Tilesets/::1761843586
 ::res://Tilesets/TilesetExtras/::1761843579
 ::res://Tilesets/TilesetPokemon/::1761843593

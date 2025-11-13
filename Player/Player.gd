@@ -3,6 +3,19 @@ extends CharacterBody2D
 @export var SPEED = 100.0
 
 @onready var animation := $AnimatedSprite2D
+@onready var inventory_ui = $"../InventorySystem"
+var inventory_open = false
+
+
+
+func _input(event):
+	if event.is_action_pressed("open_inventory"):
+		toggle_inventory()
+
+func toggle_inventory():
+	inventory_open = !inventory_open
+	inventory_ui.visible = inventory_open
+
 
 func _physics_process(delta: float) -> void:
 	if (!Global.Paused):

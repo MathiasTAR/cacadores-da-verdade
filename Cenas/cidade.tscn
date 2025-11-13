@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://nx5ki1mg28iu"]
+[gd_scene load_steps=14 format=3 uid="uid://nx5ki1mg28iu"]
 
 [ext_resource type="Texture2D" uid="uid://di8vakyw8d2po" path="res://Tilesets/TilesetPokemon/pokemon_tileset___fire_red_leaf_green___outdoors_l_by_ozotwo-d7dmntu-1272244817.png" id="1_4lp0d"]
 [ext_resource type="Script" uid="uid://cpe00j22wvvth" path="res://Cenas/cidade.gd" id="1_lwdny"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ce1kb4vuqvgkm" path="res://NPC/DraClara/dra_clara.tscn" id="6_sqqhd"]
 [ext_resource type="PackedScene" uid="uid://co6l3tchqxkmc" path="res://NPC/ProfVictor/Prof_Victor.tscn" id="7_4w1ly"]
 [ext_resource type="PackedScene" uid="uid://bylkglaabolpn" path="res://NPC/ReporterSofia/Reporter_Sofia.tscn" id="8_8oj0h"]
+[ext_resource type="PackedScene" uid="uid://bnu4mgu3axlyd" path="res://Player/Hud/inventory_system.tscn" id="9_y4w11"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4lp0d"]
 texture = ExtResource("1_4lp0d")
@@ -2547,9 +2548,6 @@ layer_3/tile_data = PackedInt32Array(196608, 327680, 1, 262144, 327680, 0, 19660
 layer_4/name = "Casas"
 layer_4/tile_data = PackedInt32Array(393258, 524292, 21, 1703961, 2752516, 21, 1703954, 2752516, 21, 1703947, 2752516, 21, 1703940, 2752516, 21, 2359321, 2752516, 21, 2359314, 2752516, 21, 2359307, 2752516, 21, 2359300, 2752516, 21, 720966, 1703940, 14, 720959, 2031620, 14)
 
-[node name="Player" parent="." instance=ExtResource("1_skjpe")]
-position = Vector2(648, 384)
-
 [node name="NPCS" type="Node" parent="."]
 
 [node name="Principais" type="Node" parent="NPCS"]
@@ -2568,3 +2566,13 @@ _use_routine = true
 _routine_points = Array[Vector2]([Vector2(150, 150), Vector2(580, 145), Vector2(530, 140), Vector2(535, 70)])
 _wait_times = Array[float]([3.0, 5.0, 2.0])
 _hud = NodePath("../../../HUD")
+
+[node name="Player" parent="." instance=ExtResource("1_skjpe")]
+position = Vector2(648, 384)
+
+[node name="InventorySystem" parent="." instance=ExtResource("9_y4w11")]
+visible = false
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 39.0
+offset_bottom = 41.0
