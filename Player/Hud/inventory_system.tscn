@@ -32,6 +32,7 @@ stretch_mode = 3
 metadata/_edit_use_anchors_ = true
 
 [node name="MarcadorHome" type="TextureButton" parent="TabContainer/Home"]
+visible = false
 modulate = Color(1, 1, 1, 0.24313726)
 layout_mode = 0
 offset_left = 252.0
@@ -42,6 +43,7 @@ scale = Vector2(0.45, 0.45)
 texture_normal = ExtResource("3_o0wrv")
 
 [node name="MarcadorBacklog" type="TextureButton" parent="TabContainer/Home"]
+visible = false
 modulate = Color(1, 1, 1, 0.34509805)
 layout_mode = 0
 offset_left = 375.0
@@ -52,6 +54,7 @@ scale = Vector2(0.45, 0.45)
 texture_normal = ExtResource("3_o0wrv")
 
 [node name="MarcadorDeduction" type="TextureButton" parent="TabContainer/Home"]
+visible = false
 modulate = Color(1, 1, 1, 0.4)
 layout_mode = 0
 offset_left = 498.0
