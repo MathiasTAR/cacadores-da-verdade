@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqtw6ubua7s02"]
+
+[ext_resource type="PackedScene" uid="uid://chnib2xokpjm0" path="res://Itens/Base/item_base.tscn" id="1_nqd7u"]
+[ext_resource type="Script" uid="uid://bqdap2rr42qa6" path="res://Itens/Base/Scriptes/item_interagivel.gd" id="2_axke1"]
+
+[node name="item_interagivel" instance=ExtResource("1_nqd7u")]
+script = ExtResource("2_axke1")
+_reusable = false
+_required_item = ""
+_remove_required_item = false

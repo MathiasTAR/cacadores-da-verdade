@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://deqeai78lckf"]
+
+[ext_resource type="Texture2D" uid="uid://csbg8jo2e01ry" path="res://Huds/panelverdade/panelverdade.jpeg" id="1_wd54w"]
+[ext_resource type="Script" uid="uid://bohxb2w2l4ajd" path="res://Huds/panelverdade/scriptDrag/draggable.gd" id="2_l8sdg"]
+[ext_resource type="Script" uid="uid://r5n1x3s1mkpw" path="res://Huds/panelverdade/scriptDrag/slot.gd" id="3_dikdl"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vuckm"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f82cn"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xg67u"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
+[node name="PainelVerdade" type="CanvasLayer"]
+process_mode = 3
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_wd54w")
+stretch_mode = 6
+
+[node name="Afirmacao" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Npc1" type="TextureRect" parent="Afirmacao"]
+layout_mode = 0
+offset_left = 1035.0
+offset_top = 150.0
+offset_right = 1163.0
+offset_bottom = 278.0
+texture = SubResource("CompressedTexture2D_vuckm")
+script = ExtResource("2_l8sdg")
+
+[node name="Npc2" type="TextureRect" parent="Afirmacao"]
+layout_mode = 0
+offset_left = 945.0
+offset_top = 348.0
+offset_right = 1073.0
+offset_bottom = 476.0
+texture = SubResource("CompressedTexture2D_f82cn")
+script = ExtResource("2_l8sdg")
+
+[node name="Npc3" type="TextureRect" parent="Afirmacao"]
+layout_mode = 0
+offset_left = 1061.0
+offset_top = 518.0
+offset_right = 1189.0
+offset_bottom = 646.0
+texture = SubResource("CompressedTexture2D_xg67u")
+script = ExtResource("2_l8sdg")
+PanelVerdade = 1
+
+[node name="Provas" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 410.0
+offset_top = -1.0
+offset_right = 450.0
+offset_bottom = 39.0
+
+[node name="Npc1" type="TextureRect" parent="Provas"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 168.0
+offset_right = 195.0
+offset_bottom = 296.0
+script = ExtResource("3_dikdl")
+
+[node name="Npc2" type="TextureRect" parent="Provas"]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 377.0
+offset_right = 204.0
+offset_bottom = 505.0
+script = ExtResource("3_dikdl")
+
+[node name="Npc3" type="TextureRect" parent="Provas"]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 548.0
+offset_right = 204.0
+offset_bottom = 676.0
+script = ExtResource("3_dikdl")
+PanelVerdade = 1

@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://chnib2xokpjm0"]
+
+[ext_resource type="Script" uid="uid://bxke2gkd4kpvo" path="res://Itens/Base/Scriptes/item_base.gd" id="1_gcdbo"]
+
+[node name="ItemBase" type="Area2D"]
+collision_layer = 128
+collision_mask = 128
+script = ExtResource("1_gcdbo")
+
+[node name="Item" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Aviso" type="Sprite2D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

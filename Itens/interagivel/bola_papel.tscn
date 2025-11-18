@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://75xmwe53016x"]
+
+[ext_resource type="PackedScene" uid="uid://bqtw6ubua7s02" path="res://Itens/Base/item_interagivel.tscn" id="1_pfdq8"]
+[ext_resource type="Texture2D" uid="uid://bngrfilrakjx6" path="res://Itens/Sprites/bolaPapel.png" id="2_jin46"]
+[ext_resource type="Script" uid="uid://qxuuqwrf2s0n" path="res://Itens/interagivel/bola_papel.gd" id="2_pfdq8"]
+[ext_resource type="Texture2D" uid="uid://bub3ocf6anjle" path="res://Huds/panelverdade/contorno-de-balao-de-fala-com-ponto-de-exclamacao.png" id="4_pacx8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jin46"]
+radius = 15.0
+
+[node name="BolaPapel" instance=ExtResource("1_pfdq8")]
+script = ExtResource("2_pfdq8")
+
+[node name="Item" parent="." index="0"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_jin46")
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("CircleShape2D_jin46")
+
+[node name="Aviso" parent="." index="2"]
+visible = false
+position = Vector2(0, -12)
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("4_pacx8")

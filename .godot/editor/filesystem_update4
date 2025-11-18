@@ -1,2 +1,2 @@
-res://Cenas/cidade.gd
-res://Player/Hud/inventory_system.tscn
+res://Cenas/cidade.tscn
+res://global.gd

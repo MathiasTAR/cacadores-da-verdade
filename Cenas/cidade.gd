@@ -57,9 +57,9 @@ var _dialog_data: Dictionary = {
 @export_category("Objects")
 @export var _hud: CanvasLayer = null
 
-func _process(delta: float) -> void:
-	
-	if Input.is_action_just_pressed("advance_message"):
-		var _new_dialog: TelaDialogo = _TELAPEQUENADIALOGO.instantiate()
-		_new_dialog.data = _dialog_data
-		_hud.add_child(_new_dialog)
+#func _process(delta: float) -> void:
+	#
+	#if Input.is_action_just_pressed("advance_message"):
+		#var _new_dialog: TelaDialogo = _TELAPEQUENADIALOGO.instantiate()
+		#_new_dialog.data = _dialog_data
+		#_hud.add_child(_new_dialog)

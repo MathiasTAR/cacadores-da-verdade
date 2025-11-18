@@ -30,13 +30,14 @@ var _playerAreaDialog: bool = false
 var _current_routine_index: int = 0
 var _is_moving_to_point: bool = false
 
-# Referências - devem ser atribuídas pelas classes filhas
 var anim: AnimatedSprite2D
 var caminho: PathFollow2D
 var dialogBox: Sprite2D
 
 func _ready():
-	# As classes filhas devem atribuir anim, caminho e dialogBox antes de chamar super._ready()
+	# Configura para processar mesmo quando pausado
+	process_mode = Node.PROCESS_MODE_ALWAYS
+	
 	if anim:
 		anim.play("Idle")
 	
@@ -44,13 +45,19 @@ func _ready():
 		_start_routine()
 
 func _physics_process(delta):
+	# Não processar movimento se o jogo estiver pausado
+	if get_tree().paused and !_dialogActive:
+		if anim and anim.animation != "Idle":
+			anim.play("Idle")
+		return
+	
 	if _playerAreaDialog and Input.is_action_just_pressed("interact") and !_dialogActive:
 		if dialogBox:
 			dialogBox.hide()
 		_dialogActive = true
 		_startDialog()
 	
-	if _moving and !Global.Paused and !_dialogActive:
+	if _moving and !_dialogActive and !get_tree().paused:
 		if _use_routine and not _routine_points.is_empty():
 			_routine_movement(delta)
 		elif caminho:
@@ -150,7 +157,7 @@ func _on_area_exited(area: Area2D):
 	if dialogBox:
 		dialogBox.hide()
 	_playerAreaDialog = false
-	if !_dialogActive:
+	if !_dialogActive and !get_tree().paused:
 		_moving = true
 		if _use_routine and not _routine_points.is_empty():
 			_is_moving_to_point = true
@@ -158,7 +165,7 @@ func _on_area_exited(area: Area2D):
 # Sistema de diálogo
 func _startDialog():
 	_playerAreaDialog = false
-	Global.Paused = true
+	get_tree().paused = true  # Usa o sistema de pausa do Godot
 	_moving = false
 	_is_moving_to_point = false
 	if anim:
@@ -171,7 +178,7 @@ func _startDialog():
 
 func _on_dialog_finished():
 	_dialogActive = false
-	Global.Paused = false
+	get_tree().paused = false  # Usa o sistema de pausa do Godot
 	if !_playerAreaDialog:
 		_moving = true
 		if _use_routine and not _routine_points.is_empty():

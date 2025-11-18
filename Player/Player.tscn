@@ -296,11 +296,11 @@ size = Vector2(7, 4)
 radius = 13.0
 
 [node name="Player" type="CharacterBody2D"]
-collision_mask = 11
+collision_mask = 27
 script = ExtResource("1_kpjcp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3.565, 3.565)
+zoom = Vector2(3.5, 3.5)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jatw7")
